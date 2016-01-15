@@ -32,4 +32,7 @@ fi
 
 
 echo MAC address: $mac_address
+echo sourcing dhcpd script....
+. ./smart-kiosk-dhcpd.sh
+
 

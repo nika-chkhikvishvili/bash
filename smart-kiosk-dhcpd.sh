@@ -10,6 +10,11 @@
 dhcpd_conf="dhcpd.conf"
 
 
+
+
+	
+
+
 #get current station number
 current_station=$(cat $dhcpd_conf | grep \#kiosk-station- |sed -e 's/#kiosk-station-//g' | tail -1)
 new_station=$((current_station+1))
