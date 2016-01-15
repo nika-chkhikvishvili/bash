@@ -5,7 +5,7 @@
 # SmartLogic - 2016
 
 
-read -p "Enter MAC address: " raw_mac
+read -p "Enter MAC address: " mac_raw
 
 # if mac contains ":" and lengt equals 17 then validate.
 if [[ $mac_raw == *[:]* ]]
@@ -21,11 +21,10 @@ then
          echo "Entered MAC adrress is invalid: $mac_raw"
          exit 1;
    fi
-
-else 
+fi 
 
     #MAC Without ":" validate characters
-     [[ $mac_raw =~ [^[:digit:][alpha]] ]] && [[ ${#mac_raw} -eq 12 ]] 
+    if  [[ $mac_raw =~ [^[:digit:][alpha]] ]] && [[ ${#mac_raw} -eq 12 ]];
      then 
          # valid and set format
          mac_address=$( echo $mac_raw | sed 's/.\{2\}/&:/g' | tr [:upper:] [:lower:])
