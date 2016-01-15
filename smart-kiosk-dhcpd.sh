@@ -1,9 +1,13 @@
 #!/bin/sh
 
 
+# check validate and correct ipv4 mac address
+# by Nick Chkhikvisvili 
+# SmartLogic - 2016
+# smart kiosk
 
+# get config file
 dhcpd_conf="dhcpd.conf"
-
 
 
 #get current station number
@@ -13,13 +17,7 @@ last_ip_addr=$(cat $dhcpd_conf| grep \fixed-address |sed -e 's/fixed-address //g
 new_ip_addr=$(echo $last_ip_addr | awk -F. -v OFS=. 'NF==1{print ++$NF}; NF>1{if(length($NF+1)>length($NF))$(NF-1)++; $NF=sprintf("%0*d", length($NF), ($NF+1)%(10^length($NF))); print}')
 
 
-
-
-
-
 # template
-
-
 template="
 #kiosk-station-$new_station
         host kiosk-station-$new_station.int.archives.gov.ge {
@@ -32,9 +30,12 @@ template="
                 }
 "
 
-
-cat <<EOF
+# push changes
+cat <<EOF >> $dhcpd_conf
 $template
 EOF
 
+# reload service
+systemctl restart dhcpd.service
 
+exit 0
