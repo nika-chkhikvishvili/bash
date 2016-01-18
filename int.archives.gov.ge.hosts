@@ -1,0 +1,10 @@
+$ttl 38400
+int.archives.gov.ge.	IN	SOA	kiosk-manager.int.archives.gov.ge. nchkhikvishvili.sl.gov.ge. (
+			1432048393
+			10800
+			3600
+			604800
+			38400 )
+int.archives.gov.ge.	IN	NS	kiosk-manager.int.archives.gov.ge.
+
+kiosk-manager.int.archives.gov.ge.	IN	A	10.20.30.40
