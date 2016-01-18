@@ -5,21 +5,22 @@
 
 
 
-source ./smart-kiosk.conf
+#source /smartkiosk/smart-kiosk.conf
+source etc/smart-kiosk/smart-kiosk.conf
 
 
 read -p "Enter MAC address: " mac_raw
 
 # sourcing mac-correcter
 echo executing mac-correcter script....
-. ./smart-kiosk-mac-correcter.sh 
+. /$bin_dir/smart-kiosk-mac-correcter.sh 
 
 
 #sourcing dhcpd
 echo executing dhcpd script....
-. ./smart-kiosk-dhcpd.sh
+. /$bin_dir/smart-kiosk-dhcpd.sh
 
 
 #sourcing named
 echo executing named script...
-. ./smart-kiosk-named.sh
+. /$bin_dir/smart-kiosk-named.sh

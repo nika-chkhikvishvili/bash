@@ -37,9 +37,8 @@ fi
 
 
 
-
-
-
+#remove last bracket
+sed -i '$ d' $dhcpd_conf_file
 
 
 # template
@@ -56,10 +55,15 @@ template="
 "
 
 
+
+
+
 # push changes
 cat <<EOF >> $dhcpd_conf_file
 $template
 EOF
+# insert last bracket
+echo '}' >> $dhcpd_conf_file
 
 # reload service
 systemctl restart dhcpd.service

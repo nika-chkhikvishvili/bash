@@ -11,7 +11,7 @@ new_serial=$(($old_serial + 1))
 sed -i "s/$old_serial/$new_serial/g" $named_zone_file
 
 # add A RR
-echo "$station_prefix$station.$domain   IN      A       $new_ip_addr" >>$named_zone_file
+echo "$station_prefix$new_station.$domain   IN      A       $new_ip_addr" >>$named_zone_file
 
 
 # reload zone
