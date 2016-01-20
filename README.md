@@ -1,3 +1,3 @@
 # Smart Kiosk
 
-smart kioks management scripts
+Smart kiosk management scripts
