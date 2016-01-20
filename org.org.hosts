@@ -1,9 +1,8 @@
 $ttl 38400
 org.org.    IN      SOA     kiosk-manager.org.org. nchkhikvishvili.org.org. (
-                        1432048378
+                        1432048379
                         10800
                         3600
                         604800
                         38400 )
 org.org.    IN      NS      kiosk-manager.org.org.
-kiosk-station-.org.org   IN      A       10.20.30.51
