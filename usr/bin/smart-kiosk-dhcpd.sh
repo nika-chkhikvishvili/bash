@@ -47,7 +47,7 @@ template="
         host $station_prefix$new_station.$domain {
                 hardware ethernet $mac_address;
                 fixed-address $new_ip_addr;
-                option host-name "$station_prefix$new_station.$domain";
+                option host-name \"$station_prefix$new_station.$domain\";
                 max-lease-time 1;
                 default-lease-time 300;
                 deny unknown-clients;
