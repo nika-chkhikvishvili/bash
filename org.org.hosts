@@ -1,8 +1,0 @@
-$ttl 38400
-org.org.    IN      SOA     kiosk-manager.org.org. nchkhikvishvili.org.org. (
-                        1432048379
-                        10800
-                        3600
-                        604800
-                        38400 )
-org.org.    IN      NS      kiosk-manager.org.org.
