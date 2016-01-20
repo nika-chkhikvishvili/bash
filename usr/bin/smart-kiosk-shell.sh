@@ -22,3 +22,8 @@ read -p "Enter MAC address: " mac_raw
 . /$bin_dir/smart-kiosk-named.sh
 
 
+#sourcing report
+. /$bin_dir/smart-kiosk-status.sh report
+
+
+

@@ -8,7 +8,7 @@
 service=$1
 state=$2
 message=$3
-report=$4
+report=$@
 
 
 if [[ $state == "ok" ]]; 
@@ -39,7 +39,7 @@ echo "Hostname: $station_prefix$new_station.$domain"
 }
 
 
-if [[ $report == "report" ]];
+if [[ "$report" == *"report"* ]];
  then
     report
 fi
