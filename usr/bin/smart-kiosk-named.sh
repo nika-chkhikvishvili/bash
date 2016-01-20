@@ -25,10 +25,20 @@ sed -i "s/$rev_old_serial/$rev_new_serial/g" $named_rev_file
 
 
 # add PTR RR
-$reverse_ip_addr.in-addr.arpa.       IN      PTR     $station_prefix$new_station.$domain." >>$named_rev_file
+echo "$reverse_ip_addr.in-addr.arpa.       IN      PTR     $station_prefix$new_station.$domain." >>$named_rev_file
 
 
 
 # reload zone
-rndc reload
+rndc reload >/dev/null 2>&1
+if [[ $? -ne 0 ]]; 
+   then 
+  . /$bin_dir/smart-kiosk-status.sh named failed 
+   exit 1
+fi 
+
+. /$bin_dir/smart-kiosk-status.sh named ok
+
+
+
 

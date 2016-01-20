@@ -1,0 +1,31 @@
+$ttl 38400
+30.20.10.in-addr.arpa.	IN	SOA	kiosk-manager.int.archives.gov.ge. nchkhikvishvili.sl.gov.ge. (
+			1432049038
+			10800
+			3600
+			604800
+			38400 )
+30.20.10.in-addr.arpa.	IN	NS	kiosk-manager.int.archives.gov.ge.
+40.30.20.10.in-addr.arpa.	IN	PTR	kiosk-manager.int.archives.gov.ge.
+51.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-1.int.archives.gov.ge.
+53.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-3.int.archives.gov.ge.
+54.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-4.int.archives.gov.ge.
+55.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-5.int.archives.gov.ge.
+52.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-2.int.archives.gov.ge.
+56.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-6.int.archives.gov.ge.
+57.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-7.int.archives.gov.ge.
+58.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-8.int.archives.gov.ge.
+59.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-9.int.archives.gov.ge.
+60.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-10.int.archives.gov.ge.
+61.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-11.int.archives.gov.ge.
+62.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-12.int.archives.gov.ge.
+63.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-13.int.archives.gov.ge.
+64.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-14.int.archives.gov.ge.
+65.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-15.int.archives.gov.ge.
+66.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-16.int.archives.gov.ge.
+67.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-17.int.archives.gov.ge.
+68.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-18.int.archives.gov.ge.
+69.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-19.int.archives.gov.ge.
+70.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-20.int.archives.gov.ge.
+71.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-21.int.archives.gov.ge.
+72.30.20.10.in-addr.arpa.	IN	PTR	kiosk-station-22.int.archives.gov.ge.
