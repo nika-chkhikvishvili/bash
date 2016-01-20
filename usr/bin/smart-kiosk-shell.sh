@@ -5,8 +5,7 @@
 
 
 
-#source /smartkiosk/smart-kiosk.conf
-source etc/smart-kiosk/smart-kiosk.conf
+source /etc/smart-kiosk/smart-kiosk.conf
 
 
 read -p "Enter MAC address: " mac_raw
